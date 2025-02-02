@@ -1,8 +1,8 @@
-short_name="[short-name]"
-name="[long-name]"
+short_name="socca"
+name="Stupidy Complicated Crud App"
 major=1
 minor=0
 patch=0
-status="alpha"
+status="released"
 build="offical"
 year=2025

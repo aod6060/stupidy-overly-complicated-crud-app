@@ -3,12 +3,12 @@
 #ifndef VERSION_GEN_H
 #define VERSION_GEN_H
 
-#define VERSION_SHORT_NAME "[short-name]"
-#define VERSION_NAME "[long-name]"
+#define VERSION_SHORT_NAME "socca"
+#define VERSION_NAME "Stupidy Complicated Crud App"
 #define VERSION_MAJOR 1
 #define VERSION_MINOR 0
 #define VERSION_PATCH 0
-#define VERSION_STATUS "alpha"
+#define VERSION_STATUS "released"
 #define VERSION_BUILD "offical"
 #define VERSION_YEAR 2025
 

@@ -6,7 +6,7 @@
 #include <sstream>
 #include <vector>
 #include <algorithm>
-
+#include "version.h"
 
 
 
@@ -22,6 +22,8 @@ struct MessagePersistanceCallback : public http::IPersistanceCallback {
 };
 
 int main(int argc, char** argv) {
+    std::cout << VERSION_FULL_NAME << "\n";
+
     MessagePersistanceCallback mpc;
 
     http::init();
