@@ -1,0 +1,12 @@
+Import("env")
+
+
+def source(file):
+    return "#/src/" + file
+
+env["source_files"] += [
+    source("main.cpp"),
+    source("sqlite3.c"),
+    source("message.cpp"),
+    source("http.cpp")
+]

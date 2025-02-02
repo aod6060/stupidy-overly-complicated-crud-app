@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Message Application: Delete Message "{{message.message}}"</title>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <div>
+                <img src="/static/img/logo.png" width="256" height="256" />
+            </div>
+
+            <h1>
+                Message Application: Delete Message "{{message.message}}"
+            </h1>
+
+            <p>
+                This is an example application written from scratch in C++ using
+                SDL_Net library. Basically this app uses TCP/IP directly so its
+                rather lowlevel when compaired to other web "Hello, World" applications.
+            </p>
+
+            <div class="mb-3">
+                <div class="mb-3">
+                    Are you sure you want to delete "{{message.message}}?"
+                </div>
+                <div class="mb-3">
+                    <form action="/delete?id={{message.id}}" method="post">
+                        <input type="submit" value="Yes" class="btn btn-danger"> | <a href="/" class="btn btn-primary">No</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="/static/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Message Application</title>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <div>
+                <img src="/static/img/logo.png" width="256" height="256" />
+            </div>
+
+            <h1>
+                Message Application
+            </h1>
+
+            <p>
+                This is an example application written from scratch in C++ using
+                SDL_Net library. Basically this app uses TCP/IP directly so its
+                rather lowlevel when compaired to other web "Hello, World" applications.
+            </p>
+
+
+            <div class="mb-3">
+                <a href="/new">New Message</a>
+            </div>
+
+            <div>
+## for message in messages
+                <div class="card text-bg-light mb-3">
+                    <div class="card-header">
+                        {{message.id}}
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            {{message.message}}
+                        </div>
+                        <div class="card-text">
+                            <a href="/edit?id={{message.id}}">Edit</a> <a href="/delete?id={{message.id}}">Delete</a>
+                        </div>
+                    </div>
+                </div>
+## endfor
+            </div>
+
+        </div>
+        <script src="/static/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
